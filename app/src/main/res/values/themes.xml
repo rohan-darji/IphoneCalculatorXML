@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.IPhoneCalculatorXML" parent="Theme.AppCompat">
+        <item name="android:colorPrimary">@color/orange</item>
+        <item name="android:colorPrimaryDark">@color/almostBlack</item>
+        <item name="android:colorAccent">@color/white</item>
+    </style>
+
+    <style name="Theme.IPhoneCalculatorXML" parent="Base.Theme.IPhoneCalculatorXML" />
+</resources>
