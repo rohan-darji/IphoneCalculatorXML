@@ -21,9 +21,9 @@
             android:id="@+id/workingsTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lines="1"
-            android:maxLines="1"
-            android:text="Hello World!"
+            android:lines="2"
+            android:maxLines="2"
+            android:text=""
             android:textAlignment="textEnd"
             android:textColor="@color/white"
             android:textSize="80sp"
@@ -45,14 +45,17 @@
 
         <Button
             style="@style/buttonFunction"
+            android:onClick="changeSign"
             android:text="+/-" />
 
         <Button
             style="@style/buttonFunction"
+            android:onClick="percentAction"
             android:text="%" />
 
         <Button
             style="@style/buttonOperator"
+            android:id="@+id/divBut"
             android:text="/" />
     </LinearLayout>
 
@@ -61,15 +64,19 @@
 
         <Button
             style="@style/buttonNumber"
+            android:id="@+id/b07"
             android:text="7" />
         <Button
             style="@style/buttonNumber"
+            android:id="@+id/b08"
             android:text="8" />
         <Button
             style="@style/buttonNumber"
+            android:id="@+id/b09"
             android:text="9" />
         <Button
             style="@style/buttonOperator"
+            android:id="@+id/mulBut"
             android:text="x" />
     </LinearLayout>
 
@@ -78,16 +85,20 @@
 
         <Button
             style="@style/buttonNumber"
+            android:id="@+id/b04"
             android:text="4" />
         <Button
             style="@style/buttonNumber"
+            android:id="@+id/b05"
             android:text="5" />
         <Button
             style="@style/buttonNumber"
+            android:id="@+id/b06"
             android:text="6" />
 
         <Button
             style="@style/buttonOperator"
+            android:id="@+id/subBut"
             android:text="-" />
     </LinearLayout>
 
@@ -96,15 +107,19 @@
 
         <Button
             style="@style/buttonNumber"
+            android:id="@+id/b01"
             android:text="1" />
         <Button
             style="@style/buttonNumber"
+            android:id="@+id/b02"
             android:text="2" />
         <Button
             style="@style/buttonNumber"
+            android:id="@+id/b03"
             android:text="3" />
         <Button
             style="@style/buttonOperator"
+            android:id="@+id/addBut"
             android:text="+" />
     </LinearLayout>
 
@@ -114,13 +129,16 @@
         <Button
             style="@style/buttonNumber"
             android:layout_weight="2"
+            android:id="@+id/b00"
             android:text="0" />
         <Button
             style="@style/buttonNumber"
+            android:id="@+id/decimalBut"
             android:text="." />
         <Button
             style="@style/buttonOperator"
             android:onClick="equalsAction"
+            android:id="@+id/equalBut"
             android:text="=" />
     </LinearLayout>
 
