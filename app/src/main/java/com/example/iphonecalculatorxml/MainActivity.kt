@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.iphonecalculatorxml.databinding.ActivityMainBinding
-import java.util.function.DoubleUnaryOperator
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,11 +25,11 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
-    var canAddDecimal = 1
-    var newOperation = false
-    var finalAns: Double? = 0.0
-    var operator = "none"
-    var oldNum = "0"
+    private var canAddDecimal = 1
+    private var newOperation = false
+    private var finalAns: Double? = 0.0
+    private var operator = "none"
+    private var oldNum = "0"
 
     fun numberAction(view: View) {
         try {
