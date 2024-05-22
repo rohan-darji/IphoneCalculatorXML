@@ -14,8 +14,6 @@ import java.util.function.DoubleUnaryOperator
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-//    private var canAddOperation = false
-//    private var canAddDecimal = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -97,6 +95,10 @@ class MainActivity : AppCompatActivity() {
 
     fun operationAction(view: View) {
         val selectBut = view as Button
+        if (oldNum != "0" && binding.workingsTV.text.toString() != "" && operator != "none") {
+            equalsAction(view)
+        }
+
         when(selectBut.id) {
             binding.mulBut.id -> {
                 operator = "*"
@@ -117,6 +119,8 @@ class MainActivity : AppCompatActivity() {
     }
     fun clear(view: View) {
         binding.workingsTV.text = ""
+        oldNum = "0"
+        operator = "none"
         canAddDecimal = 1
         newOperation = true
     }
