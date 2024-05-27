@@ -18,17 +18,15 @@ The following **required** functionality is completed:
 ## Extensions
 The following **extensions** are implemented:
 - **libs.plugins.android.application:** This is a plugin that provides all the necessary Android-specific configurations for your project.
-- **libs.plugins.android.application:** This provides tasks to build and install your Android application.
 - **libs.plugins.jetbrains.kotlin.android:** This is a Kotlin plugin that adds Android-specific functionality to your project.
 - **libs.androidx.core.ktx:** This is a set of Kotlin extensions that are included as part of Android Jetpack. ‘ktx’ stands for Kotlin Extensions.
-- **libs.androidx.activity.compose:** This provides a way to use Jetpack Compose with Activities.
-- **libs.androidx.ui:** This provides the core UI toolkit for Jetpack Compose.
-- **libs.androidx.ui.graphics:** This provides graphics-related functionality for Jetpack Compose.
-- **libs.androidx.material3** This provides Material Design components for Jetpack Compose.
+- **libs.androidx.appcompat:** This is a library that provides backward-compatible versions of Android components.
+- **libs.material:** This is a library that provides Material Design UI components.
+- **libs.androidx.activity:** This is a library that provides components to help manage your app’s activities.
+- **libs.androidx.constraintlayout:** This is a library that provides a flexible layout manager for your app, allowing you to create large and complex layouts with a flat view hierarchy.
 - **libs.junit:** This is a testing framework for Java programming language.
 - **libs.androidx.junit:** This is a library that provides a set of APIs that allows writing JUnit 4 style tests for Android.
 - **libs.androidx.espresso.core:** This is a library that provides APIs for writing UI tests for Android.
-- **libs.androidx.ui.test.manifest:** This provides testing APIs for interacting with the Android manifest in Compose tests.
 
 ## Video Walkthrough
 Here's a walkthrough of implemented user stories:
@@ -39,7 +37,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 - I endeavored to emulate both the layout and color theme of an iOS calculator app.
-- While constructing the user interface with Jetpack Compose, I initially faced some hurdles, particularly when it came to assigning specific weights to the buttons. This was a novel experience for me. However, with time and perseverance, I was able to successfully navigate through these challenges.
+- I encountered some challenges with the Kotlin Android extensions and the binding of the XML to the Kotlin file. However, I was able to swiftly find a solution.
 
 ## License
 
